@@ -1,0 +1,41 @@
+/* Write CSS code here */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsteelblue;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+.calculator{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+#display{
+  padding: 20px;
+  font-size: 30px;
+  border: none;
+  text-align: right;
+  background-color:blue ;
+  color: white;  
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btn{
+padding: 20px;
+font-size: 20px;
+border: 1px solid white;
+background-color: rosybrown;
+cursor: pointer;
+}
+.btn:hover{
+    opacity:0.8;
+}
+.equal{
+    grid-column: span 3;
+    background-color: tomato;
+}
